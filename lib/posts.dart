@@ -11,6 +11,7 @@ class PostsPage extends StatelessWidget {
       appBar: AppBar(
           title: Text("Moveis"),
       ),
+
         body: FutureBuilder(
             future: httpService.getPosts(),
             builder: (BuildContext context, AsyncSnapshot<List<Post>> snapshot) {

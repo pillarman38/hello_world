@@ -5,7 +5,6 @@ import 'dart:convert';
 
 class HttpService {
   final String postUrl = "http://192.168.0.153:4012/api/mov/movies";
-
   Future<List<Post>> getPosts() async {
     Response res = await get(Uri.parse(postUrl));
 

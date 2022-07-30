@@ -53,6 +53,7 @@ class Post {
     required this.audioSelect,
     required this.pixFmt
   });
+
   factory Post.fromJson(Map<String, dynamic> json) {
     return Post(
         title: json['title'] as String,
